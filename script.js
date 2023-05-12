@@ -1,5 +1,5 @@
 /* **SUPER IMPORTANT**  PUT THE URL OF THE JSON FILE WHERE YOU INSERTED ALL YOUR DATA HERE !! */
-const vnData = "/projects/vnengine/VNData.json";
+const vnData = "VNData.json";
 
 // Creates the HTML and inserts it into the document
 function insertHTML() {

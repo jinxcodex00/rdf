@@ -17,6 +17,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 22px;
   color: var(--text-color);
+  background-image: url("img/galaxy.jpg");
 }
 
 #mainbox {

@@ -34,8 +34,8 @@ const $mainbox = document.querySelector("#mainbox");
 let json, to;
 
 //Tracks what "Page Number" the user is on
-var pageNum = 0;
-var currentPage;
+let pageNum = 0;
+let currentPage;
 
 async function grabData() {
   // Load the data
@@ -79,8 +79,8 @@ function handleOptions(data) {
   $optionsbox.innerHTML = "";
 
   if (data.Scene1.PAGES[currentPage].hasOwnProperty("Options")) {
-    var o = data.Scene1.PAGES[currentPage].Options;
-    var str = Object.keys(o).forEach((k) => {
+    let o = data.Scene1.PAGES[currentPage].Options;
+    let str = Object.keys(o).forEach((k) => {
       const row = document.createElement("div");
       row.innerHTML = `${k}`;
       $optionsbox.appendChild(row);
@@ -101,9 +101,9 @@ function typeWriter(txt, i) {
     $textbox.innerHTML = "";
     clearTimeout(to);
   }
-  var speed = 30; /* The speed/duration of the effect in milliseconds */
+  let speed = 30; /* The speed/duration of the effect in milliseconds */
   if (i < txt.length) {
-    var c = txt.charAt(i++);
+    let c = txt.charAt(i++);
     if (c === " ") c = "&nbsp;";
     $textbox.innerHTML += c;
     to = setTimeout(function () {
